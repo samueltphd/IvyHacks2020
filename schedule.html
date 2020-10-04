@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Virtual Hallway</title>
+
+    <style media="screen">
+      body {
+        color: black;
+      }
+
+      #page-header {
+        background-color: #a28089;
+        height: 300px;
+      }
+
+      #page-header img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        height: 100%;
+      }
+
+      .wrapper {
+        display: grid;
+        grid-template-columns: 20% 78%;
+        grid-column-gap: 2%;
+        grid-row-gap: 2%;
+        background-color: #a28089;
+      }
+
+      .left-pane {
+        background-color: #51e2f5;
+      }
+
+      .main-pane {
+        background-color: #51e2f5;
+      }
+
+      footer {
+        background-color: #a28089;
+        color: blue;
+      }
+
+      #puppy-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+
+        font-size: 100px;
+      }
+
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+    <script src="schedule.js"></script>
+  </head>
+
+  <body>
+    <header id="page-header">
+      <img src="hallway.jpg"></img>
+    </header>
+
+    <div class="wrapper">
+
+      <div class="left-pane">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="layout.html">Layout Overview</a></li>
+          <li><a href="gotoclass.html">Go To Class</a></li>
+        </ul>
+      </div>
+
+      <div class="main-pane">
+        <table>
+          <tr>
+            <th>Index</th>
+            <th>Class</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Room</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Programming 101</td>
+            <td>3 seconds</td>
+            <td>7 seconds</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Programming 102</td>
+            <td>15 seconds</td>
+            <td>21 seconds</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Programming 103</td>
+            <td>31 seconds</td>
+            <td>52 seconds</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Break!</td>
+            <td>53 seconds</td>
+            <td>90 seconds</td>
+            <td>12</td>
+          </tr>
+        </table>
+
+        <main></main>
+      </div>
+
+    </div>
+
+    <footer>
+      Contact info!
+    </footer>
+
+
+  </body>
+</html>

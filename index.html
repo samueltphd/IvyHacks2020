@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Virtual Hallway</title>
+
+    <style media="screen">
+      body {
+        color: black;
+      }
+
+      #page-header {
+        background-color: #a28089;
+        height: 300px;
+      }
+
+      #page-header img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        height: 100%;
+      }
+
+      .wrapper {
+        display: grid;
+        grid-template-columns: 20% 78%;
+        grid-column-gap: 2%;
+        grid-row-gap: 2%;
+        background-color: #a28089;
+      }
+
+      .left-pane {
+        background-color: #51e2f5;
+      }
+
+      .main-pane {
+        background-color: #51e2f5;
+      }
+
+      footer {
+        background-color: #a28089;
+        color: blue;
+      }
+
+      #puppy-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+
+        font-size: 100px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header id="page-header">
+      <img src="hallway.jpg"></img>
+    </header>
+
+    <div class="wrapper">
+
+      <div class="left-pane">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="layout.html">Layout Overview</a></li>
+          <li><a href="gotoclass.html">Go To Class</a></li>
+        </ul>
+      </div>
+
+      <div class="main-pane">
+        <!-- <a href="https://www.google.com"> -->
+          <!-- <img src="dog.jpg" id="puppy-img"></img> -->
+        <!-- </a> -->
+        <h3>The Story is Familiar...</h3>
+        <p>
+          Around March 2020, students across the country went home after COVID-19
+          pandemic making remote school a norm. For all of the changes that came
+          with this, one of the biggest was the lack of informal social interactions.
+          Be it meeting with a partner in the three minutes after class or catching
+          up with a friend on the way to or from a study session, these informal
+          interactions often define an in-person school experience.
+        </p>
+        <img src="school-sucks.gif"></img>
+        <p>
+          This is the motivation for building a virtual hallway. The goal is to
+          recreate the experience missing from in person classes to recoupe some
+          of the invaluable informal conversations that happen immediately before
+          and immediately after class. Catch up even more with announcements boards
+          and a casual passing smile!
+        </p>
+      </div>
+
+    </div>
+
+    <footer>
+      Contact info!
+    </footer>
+
+
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Virtual Hallway</title>
+
+    <style media="screen">
+      body {
+        color: black;
+      }
+
+      #page-header {
+        background-color: #a28089;
+        height: 300px;
+      }
+
+      #page-header img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        height: 100%;
+      }
+
+      .wrapper {
+        display: grid;
+        grid-template-columns: 20% 78%;
+        grid-column-gap: 2%;
+        grid-row-gap: 2%;
+        background-color: #a28089;
+      }
+
+      .left-pane {
+        background-color: #51e2f5;
+      }
+
+      .main-pane {
+        background-color: #51e2f5;
+      }
+
+      footer {
+        background-color: #a28089;
+        color: blue;
+      }
+
+      #puppy-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+
+        font-size: 100px;
+      }
+
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+    <script src="gotoclass.js"></script>
+  </head>
+
+  <body>
+    <header id="page-header">
+      <img src="hallway.jpg"></img>
+    </header>
+
+    <div class="wrapper">
+
+      <div class="left-pane">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="layout.html">Layout Overview</a></li>
+          <li><a href="gotoclass.html">Go To Class</a></li>
+        </ul>
+      </div>
+
+      <div class="main-pane">
+        <main></main>
+      </div>
+
+    </div>
+
+    <footer id="footer">
+
+    </footer>
+
+
+  </body>
+</html>
